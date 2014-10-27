@@ -1,0 +1,58 @@
+/*网站公用样式*/
+html,body {text-align:left;font-family:"\5fae\8f6f\96c5\9ed1";margin:0 auto;padding:0;background:#fff;font-size:12px;color:#333;text-shadow: 0px 1px 1px #999;}
+html,body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,p,blockquote,th,td {margin:0;padding:0;}
+li,dl{list-style-image:none;list-style-position:outside;list-style-type:none;}
+h1,h2,h3,h4,h5,h6 { margin:0; padding:0;}
+img {border:0;}
+
+/*公用默认超链接*/
+a {text-decoration:none;outline-style: none;outline-width: 0px;text-shadow: 0px 1px 1px #ddd;}
+a:link {text-decoration:none;outline-style: none;outline-width: 0px;}
+a:visited {text-decoration:none;outline-style: none;outline-width: 0px;}
+a:hover {text-decoration:none;outline-style: none;outline-width: 0px;}
+a:active {text-decoration:none;outline-style: none;outline-width: 0px;}
+
+/*less 参数初始化*/
+.left{float:left;}
+.right{float:right;}
+.c_b{clear:both;}
+.block{display: block;}
+.u_none{list-style: none;padding: 0;margin: 0;}
+.auto_h{height: auto !important;height: 100%;overflow: hidden !important;_overflow: visible;}
+.auto_m_h(@min_h:0px;){height: auto !important;height: 100%;min-height: @min_h;height: @min_h;overflow: hidden !important;_overflow: visible;}
+.a_out{float:left;white-space:nowrap;text-overflow:ellipsis;overflow: hidden;}
+/*漂浮*/
+.m_c{margin:0 auto;}
+.m_tb_c (@mtop:0;@mbot:0;) {margin: @mtop auto @mbot;}
+.m_tb_lr (@mtop_bot:0;@mleft_right:0;) {margin: @mtop_bot @mleft_right;}
+/*背景图片*/
+@bgurl:"/images/webapp/";
+.bg_img(@bgname;@x_align:left;@y_align:top;@set_repeat:no-repeat;){background: url("@{bgurl}@{bgname}") @set_repeat @x_align @y_align;}
+/*字体大小*/
+.fs12{font-size: 12px;}
+.fs14{font-size: 14px;}
+.fs16{font-size: 16px;}
+.fs18{font-size: 18px;}
+.fs20{font-size: 20px;}
+.fs22{font-size: 22px;}
+/*字体对齐方式*/
+.t_c{text-align: center;}
+.t_l{text-align: left;}
+.t_r{text-align: right;}
+/*div 定位*/
+.p_a{position:absolute;}
+.p_r{position:relative;}
+/*圆角*/
+.radius(@radius:5px){border-radius: @radius;-moz-border-radius: @radius;-khtml-border-radius: @radius;-webkit-border-radius: @radius;}
+.transition(@transition:0.4s){-webkit-transition: -webkit-transform @transition ease-out;-moz-transition: -moz-transform @transition ease-out;transition: transform @transition ease-out;-khtml-transition: transform @transition ease-out;}
+.transform(@transform:360deg){transform: rotate(@transform);-webkit-transform: rotate(@transform);-moz-transform: rotate(@transform);-khtml-transform: rotate(@transform);}
+@default_background:#ececec;	/*默认背景色*/
+@default_width:1004px;	/*默认网站宽度*/
+@zero: 0px;				/*0像素*/
+/*阴影*/
+.3dshadow{letter-spacing: 0;text-shadow: 0px 1px 0px #999, 0px 2px 0px #888, 0px 3px 0px #777, 0px 4px 0px #666}
+.lshadow{text-shadow: 1px 0 0 #8B4513, 0 1px 0 #8B4513, 0 -1px 0 #8B4513, -1px 0 0 #8B4513, 1px 0 1px #8B4513, 0 1px 1px #8B4513, 0 -1px 1px #8B4513, -1px 0 1px #8B4513;}
+.l_wshadow(@scolor:#ffffff){text-shadow: 1px 0 0 @scolor, 0 1px 0 @scolor, 0 -1px 0 @scolor, -1px 0 0 @scolor, 1px 0 1px @scolor, 0 1px 1px @scolor, 0 -1px 1px @scolor, -1px 0 1px @scolor;}
+/*包含动画
+@import (less) "animate/animate.min.css";*/
+/*less 参数初始化 结束*/
